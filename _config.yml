@@ -1,28 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Estatica 2</title>
-</head>
-<body>
-    <font SIZE=18>Desarrollador de software</font>
-   <p>Un desarrollador es un programador o una compañía comercial que se dedica a uno o más aspectos del proceso de desarrollo de software. Se trata de un ámbito más amplio de la programación algorítmica.
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
 
-    En informática, un desarrollador1​ (al que con frecuencia también se conoce como analista-programador), es un especialista en informática que es capaz de concebir y elaborar sistemas informáticos (paquetes de software), así como de implementarlos y ponerlos a punto, utilizando uno o varios lenguajes de programación.
-    
-    El desarrollador puede contribuir a la visión general del proyecto más a nivel de aplicación que a nivel de componentes, así como en las tareas de programación individuales.
-    
-    Conforme pasa el tiempo, la separación entre el diseño de sistemas informáticos, el desarrollo de software, y la programación, se van haciendo más claras y diferenciadas. En el mercado laboral suele encontrarse una diferenciación entre programadores y desarrolladores, siendo estos últimos los que diseñan la estructura o jerarquía de clases. Incluso esos desarrolladores se convierten en arquitectos de sistemas informáticos, o sea, aquellos que diseñan la arquitectura a varios niveles o las interacciones entre componentes de un proyecto de software grande.</p>
+title: My sample book
+author: The Jupyter Book Community
+logo: logo.png
 
-    <font SIZE=4>El concepto de desarrollo de software incluye:</font>
-    <ul>
-    <li>Trabajo en equipo: los proyectos son en general una colaboración entre varios desarrolladores, que tratan cada uno una parte específica del sistema que se desarrolla, y también de otros tipos de colaboradores, como los comerciales (que definen con el cliente la finalidad y las necesidades del producto), o como los diseñadores gráficos (que definen el aspecto de las pantallas y cuestiones relativas a la ergonomía), etc.</li>
-    <li>Concepción o diseño: a partir de un pliego de condiciones (user requirement specifications), se definen las especificaciones técnicas (estructura de datos, comunicación entre módulos, etcétera).</li>
-    <li>Pruebas: sirven para detectar las disconformidades de trabajadores y clientes, y los errores.</li>
-    <li>Mantenimiento: abarca la corrección de los errores después de que comience el uso comercial del programa informático, así como las mejoras que se revelen como necesarias para hacer evolucionar el producto.</li> 
-    </ul>
-   
-</body>
-</html>
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
